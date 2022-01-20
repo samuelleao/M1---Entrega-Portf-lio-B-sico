@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 968px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    color: #000000;
+    font-weight: 600;
+}
+
+.title-1{
+    font-size: 42px;
+    line-height: 58px;
+}
+
+.title-2{
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.headline{
+    color: #333333;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.body{
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.navigation{
+    background-color: #4572E8;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation ul li a{
+    color: #ffffff;
+}
+
+.search-area {
+    display: flex;
+    gap: 8px;
+    margin: 48px 0;
+}
+
+.search-area input{
+    width: 90%;
+    height: 60px;
+    padding: 12px
+}
+
+.search-area button{
+    width: 10%;
+    height: 60px;
+    background-color: #4572E8;
+    border: 1px;
+    color: #ffffff;
+}
+
+.article-main{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.last-articles{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+
+.last-article{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.last-article a{
+    font-size: 14px;
+    color: #4572E8;
+    font-weight: 500;
+}
+
+@media(max-width: 900px){
+    .container{
+        width: 90%;
+    }
+    .last-articles{
+        flex-direction: column;
+        gap: 48px;
+    }
+    .last-articles .last-article{
+        width: 100%;
+    }
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area :is(input, button){
+        width: 100%;
+    }
+}
